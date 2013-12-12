@@ -7,8 +7,7 @@ http://codex.wordpress.org/Function_Reference/wp_nav_menu
 function foundation_top_bar() {
     wp_nav_menu(array( 
         'container' => false,                           // remove nav container
-        'container_class' => '',           		        // class of container
-        'menu' => '',                    	            // menu name
+        'container_class' => '',           		        // class of container                    	           
         'menu_class' => 'top-bar-menu right',         	// adding custom nav class
         'theme_location' => 'main-menu',                // where it's located in the theme
         'before' => '',                                 // before each link <a> 
@@ -16,7 +15,7 @@ function foundation_top_bar() {
         'link_before' => '',                            // before each link text
         'link_after' => '',                             // after each link text
         'depth' => 5,                                   // limit the depth of the nav
-    	'fallback_cb' => false,                         // fallback function (see below)
+    	'fallback_cb' => false,                // fallback function (see below)
         'walker' => new top_bar_walker()
 	));
 } // end right top bar
@@ -34,26 +33,6 @@ class top_bar_walker extends Walker_Nav_Menu {
         $element->classes[] = ($element->has_children) ? 'has-dropdown' : '';
 		
         parent::display_element($element, $children_elements, $max_depth, $depth, $args, $output);
-    }
-	
-    function start_el(&$output, $item, $depth, $args) {
-        $item_html = '';
-        parent::start_el($item_html, $item, $depth, $args);	
-		
-        $output .= ($depth == 0) ? '<li class="divider"></li>' : '';
-		
-        $classes = empty($item->classes) ? array() : (array) $item->classes;	
-		
-        if(in_array('label', $classes)) {
-            $output .= '<li class="divider"></li>';
-            $item_html = preg_replace('/<a[^>]*>(.*)<\/a>/iU', '<label>$1</label>', $item_html);
-        }
-        
-	if ( in_array('divider', $classes) ) {
-		$item_html = preg_replace( '/<a[^>]*>( .* )<\/a>/iU', '', $item_html );
-	}
-		
-        $output .= $item_html;
     }
 	
     function start_lvl(&$output, $depth = 0, $args = array()) {

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 		
-	<div id="primary" class="large-8 columns" role="main">		
+	<div id="primary" class="medium-8 large-8 columns" role="main">		
 		
 		<?php if( have_posts() ) : ?>
             <?php while( have_posts() ) : the_post(); ?> 

@@ -3,17 +3,17 @@
             <footer id="site-footer" class="row" role="contentinfo">
                 <hr />
                 <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
-                <div class="large-4 columns">
+                <div class="medium-4 large-4 columns">
                     <?php dynamic_sidebar( 'footer-1' ); ?>
                 </div>
                 <?php endif; ?>
                 <?php if ( is_active_sidebar( 'footer-2' ) ) : ?>
-                <div class="large-4 columns">
+                <div class="medium-4 large-4 columns">
                     <?php dynamic_sidebar( 'footer-2' ); ?>
                 </div>
                 <?php endif; ?>
                 <?php if ( is_active_sidebar( 'footer-3' ) ) : ?>
-                <div class="large-4 columns">
+                <div class="medium-4 large-4 columns">
                     <?php dynamic_sidebar( 'footer-3' ); ?>
                 </div>
                 <?php endif; ?>

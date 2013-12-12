@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: SmartFoundation v1.1.0\n"
+"Project-Id-Version: SmartFoundation5 v0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-10-23 12:47:46+0000\n"
+"PO-Revision-Date: 2013-12-12 09:58:02+0000\n"
 "Last-Translator: smadmin <post@smartmedia.no>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -148,7 +148,7 @@ msgstr "Send kommentar"
 
 #: header.php:32
 #, php-format
-#@ toolbox
+#@ smart_foundation
 msgid "Page %s"
 msgstr "Side %s"
 
@@ -177,7 +177,7 @@ msgstr "Oops! Denne siden finnes ikke."
 msgid "It looks like nothing was found on this page. Maybe you should try the searchfield below?"
 msgstr "Det ser ikke ut som noe ble funnet på denne siden. Kanskje du kan prøve en av lenkene under eller et søk?"
 
-#: header.php:99
+#: header.php:87
 #@ smart_foundation
 msgid "Banner"
 msgstr "Banner"
@@ -231,22 +231,22 @@ msgstr "Tilbakeping er stengt, men du kan <a class=\"comment-link\" href=\"#resp
 msgid "Both comments and trackbacks are currently closed."
 msgstr "Både kommentarfeltet og tilbakeping er stengt."
 
-#: functions.php:132
+#: functions.php:130
 #@ smart_foundation
 msgid "Sidebar"
 msgstr "Widgetområde"
 
-#: functions.php:150
+#: functions.php:139
 #@ smart_foundation
 msgid "Footer 1"
 msgstr "Bunnområde 1"
 
-#: functions.php:159
+#: functions.php:148
 #@ smart_foundation
 msgid "Footer 2"
 msgstr "Bunnområde 2"
 
-#: functions.php:168
+#: functions.php:157
 #@ smart_foundation
 msgid "Footer 3"
 msgstr "Bunnområde 3"
@@ -261,11 +261,6 @@ msgstr "Tilbake"
 msgid "Menu"
 msgstr "Meny"
 
-#: functions.php:141
-#@ smart_foundation
-msgid "Megadropdown"
-msgstr "Megameny"
-
 #: footer.php:27
 #@ smart_foundation
 msgid "Built on WordPress by"
@@ -276,13 +271,13 @@ msgstr "Bygget på WordPress av"
 msgid "Design by"
 msgstr "Design av"
 
-#: functions.php:19
-#@ smart_foundation
-msgid "Main menu"
-msgstr "Hovedmeny"
-
-#: functions.php:228
+#: functions.php:217
 #@ default
 msgid "General Information"
+msgstr ""
+
+#: functions.php:19
+#@ smart_foundation
+msgid "Meny"
 msgstr ""
 

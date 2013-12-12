@@ -29,7 +29,7 @@ if ( $site_description && ( is_home() || is_front_page() ) )
 
 // Add a page number if necessary:
 if ( $paged >= 2 || $page >= 2 )
-    echo ' | ' . sprintf( __( 'Page %s', 'toolbox' ), max( $paged, $page ) ); ?>
+    echo ' | ' . sprintf( __( 'Page %s', 'smart_foundation' ), max( $paged, $page ) ); ?>
     </title>
     
     <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -56,11 +56,9 @@ if ( $paged >= 2 || $page >= 2 )
                         <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
                     </h1>
                 </li>          
-                <?php if( has_nav_menu( 'main-menu' )){ ?>
-                    <li class="toggle-topbar menu-icon"><a href="#"><span><?php _e('Menu', 'smart_foundation'); ?></span></a></li>
-                <?php }else{ ?>
-                    <li class="toggle-topbar"><a href="#"><span><?php _e('No menu', 'smart_foundation'); ?></span></a></li>
-                <?php } ?>
+
+                <?php if( has_nav_menu( 'main-menu' ) ){ ?><li class="toggle-topbar menu-icon"><a href="#"><span><?php _e('Menu', 'smart_foundation'); ?></span></a></li> <?php } ?>
+
             </ul>
             <section class="top-bar-section">
                 <?php foundation_top_bar(); ?>

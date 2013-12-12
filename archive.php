@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<div id="primary" class="large-8 columns" role="main">
+	<div id="primary" class="medium-8 large-8 columns" role="main">
 		<header>
 		    <h2 id="archive-title"><?php post_type_archive_title(); ?></h2>
 		</header>
