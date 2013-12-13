@@ -114,5 +114,10 @@ a.zoomLink{
 /*
 = Media Queries
 ------------------------------------------*/
-@media only screen and (min-width: 768px) {
+/* Medium breakpoint 640px */
+@media only screen and (min-width: 641px) {
+
+}
+/* Large breakpoint 1024px */
+@media only screen and (min-width: 1025px) {
 }
