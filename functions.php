@@ -51,7 +51,7 @@ function smart_foundation_setup(){
 
 add_action( 'after_setup_theme', 'smart_foundation_setup' );
 
-// request foundation top bar walker
+// includes foundation top bar walker and custom post types and fields
 require_once get_template_directory() . '/includes/foundation-walker.php';
 require_once get_template_directory() . '/includes/custom_fields_and_post_types.php';
 
