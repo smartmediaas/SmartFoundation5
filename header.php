@@ -48,7 +48,7 @@ if ( $paged >= 2 || $page >= 2 )
 
 <body <?php body_class(); ?>>
     
-    <div class="contain-to-grid fixed hide-for-large-up">
+    <div class="contain-to-grid fixed hide-for-medium-up">
         <nav class="top-bar" data-topbar>
             <ul class="title-area">
                 <li class="name">
@@ -68,7 +68,7 @@ if ( $paged >= 2 || $page >= 2 )
 
     <div id="page" class="row">
         <div id="inner-page" class="large-12 columns">
-            <header id="site-header" class="row show-for-large-up">
+            <header id="site-header" class="row show-for-medium-up">
                 <div class="large-12 columns">
                     <div id="logos" class="row">
                         <div id="site-title" class="large-12 columns">
@@ -87,7 +87,7 @@ if ( $paged >= 2 || $page >= 2 )
                 <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php _e('Banner', 'smart_foundation'); ?>" />  
             </div>          
             
-            <nav class="main-navigation row show-for-large-up" role="navigation">
+            <nav class="main-navigation row show-for-medium-up" role="navigation">
                 <?php 
                     if( has_nav_menu( 'main-menu' )){
                         $menu_class = 'menu large-12 columns';
